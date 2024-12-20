@@ -3,8 +3,8 @@ import { useState ,useEffect} from 'react';
 import NavBarInshort from './component/NavBarInshort/NavBarInshort';
 import axios from "axios";
 import NewsContent from './component/newsContent/newsContent';
-import NewsCard from './component/newsCard/newsCard';
 import Footer from './component/footer/footer';
+import apikey from './Data/config';
 
 function App() {
   const [category, setCategory] = useState(["general"])
@@ -14,8 +14,7 @@ function App() {
 
   const newsApi=async ()=>{
     try {
-      const proxyUrl='https://cors-anywhere.herokuapp.com'
-      const news = await axios.get(`https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${process.env.REACT_APP_API_KEY}&pageSize=${lodeMore}`);
+      const news = await axios.get(`https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${apikey}&pageSize=${lodeMore}`);
       if (news.data && news.data.articles) {
         const filteredArticles = news.data.articles.filter(
           (article) => article.title !== '[Removed]'
@@ -30,7 +29,7 @@ function App() {
     }
   }
   useEffect(() => {
-  newsApi();
+  newsApi();  // eslint-disable-next-line
   }, [newsArray,newsResult,lodeMore])
   
   return (

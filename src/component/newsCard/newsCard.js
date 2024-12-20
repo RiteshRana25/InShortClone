@@ -1,5 +1,6 @@
 import React from 'react'
 import './newsCard.css'
+
 const NewsCard = ({newsItem}) => {
   return (
     <div className='newsDiv'>
