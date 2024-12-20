@@ -16,7 +16,7 @@ function App() {
   const newsApi=async ()=>{
     try {
       const proxyUrl='https://cors-anywhere.herokuapp.com'
-      const news = await axios.get(`https://${proxyUrl}newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${apikey}&pageSize=${lodeMore}`);
+      const news = await axios.get(`https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${apikey}&pageSize=${lodeMore}`);
       if (news.data && news.data.articles) {
         const filteredArticles = news.data.articles.filter(
           (article) => article.title !== '[Removed]'
