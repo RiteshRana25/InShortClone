@@ -7,9 +7,9 @@ const Footer = () => {
       <div className='top'>
         <span>
         inshorts Clone made by - Ritesh Rana
-        </span>
-        <hr style={{width:'90%'}}/>        
+        </span>        
       </div>
+      <hr style={{width:'90%'}}/>
       <div className='logo'>
       <a href=''>
       <i class="fa-brands fa-instagram fa-2x"></i>
