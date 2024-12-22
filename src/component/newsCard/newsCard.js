@@ -1,5 +1,5 @@
 import React from 'react'
-import './newsCard.css'
+import './NewsCard.css'
 
 const NewsCard = ({newsItem}) => {
   const fullDate=new Date(newsItem.publishedAt);

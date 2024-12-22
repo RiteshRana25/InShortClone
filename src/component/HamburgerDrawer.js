@@ -1,5 +1,5 @@
 import * as React from "react";
-import Categories from "../Data/categories";
+import Categories from "../Data/Categories.js";
 import {
   Box,
   Drawer,
@@ -8,15 +8,12 @@ import {
   Divider,
   ListItem,
   ListItemButton,
-  ListItemIcon,
   ListItemText,
   useMediaQuery,
   CssBaseline,
   ThemeProvider,
   createTheme,
 } from "@mui/material";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
 import MenuIcon from "@mui/icons-material/Menu";
 
 

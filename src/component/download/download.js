@@ -1,5 +1,5 @@
 import React from 'react'
-import './download.css'
+import './Download.css'
 
 const Download = () => {
   return (

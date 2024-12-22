@@ -1,8 +1,8 @@
 import { Container } from '@mui/material'
 import React from 'react'
 import './NewsContent.css'
-import Download from '../download/download'
-import NewsCard from '../newsCard/newsCard'
+import Download from '../Download/Download.js'
+import NewsCard from '../NewsCard/NewsCard.js'
 
 const NewsContent = ({newsArray,newsResult,lodeMore,setLodeMore}) => {
   return (

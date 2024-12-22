@@ -1,6 +1,6 @@
 import React from 'react'
 import './NavBarInshort.css'
-import HamburgerDrawer from '../HamburgerDrawer'
+import HamburgerDrawer from '../HamburgerDrawer.js'
 const NavBarInshort = ({setCategory}) => {
   return (
     <div className='navbar'>
